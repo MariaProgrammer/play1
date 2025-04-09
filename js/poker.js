@@ -15,3 +15,24 @@ const swiper6 = new Swiper(".swiper6", {
   keyboard: true,
   
 });
+
+//изменение цвета шрифта по наведению
+
+const bottomCards = Array.from(document.querySelectorAll('.news__slide'))
+
+bottomCards.forEach(card => {
+  card.addEventListener('mouseover', (e) => {
+    let currentCard = e.currentTarget
+    let currentText = currentCard.childNodes[3].childNodes[1]
+    currentText.style.color = '#2ecc71'
+
+  })
+})
+bottomCards.forEach(card => {
+  card.addEventListener('mouseleave', (e) => {
+    let currentCard = e.currentTarget
+    let currentText = currentCard.childNodes[3].childNodes[1]
+    currentText.style.color = '#000000'
+
+  })
+})
