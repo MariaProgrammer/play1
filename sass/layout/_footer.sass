@@ -1,0 +1,288 @@
+.footer
+
+  &__top
+    background: $color-white
+    padding-top: 30px
+    padding-bottom: 70px
+
+    h2
+      margin-bottom: 25px
+      color: $color-grey
+      font-weight: 400
+      font-size: 24px
+      line-height: 1.25
+
+    p
+      margin-bottom: 20px
+
+    li::before
+      content: ''
+      display: inline-block
+      transform: translateY(-4px)
+      height: 4px
+      width: 4px
+      border-radius: 50%
+      margin-right: 0.5rem
+      background: $color-grey
+    &-container
+      height: 150px
+      overflow: hidden
+      position: relative
+      &.active
+        height: 100%
+        padding-bottom: 50px
+
+      &::after
+        content: ''
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $color-white 60%)
+        height: 40px
+        width: 100%
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 10
+    &-btn
+      position: absolute
+      bottom: -20px
+      left: 30px
+      z-index: 20
+      color: $color-light-green
+      font-weight: 400
+      font-size: 12
+      line-height: 1.4
+      border-bottom: 1px dashed $color-light-green
+      margin-top: 20px
+    &-button-cover
+      max-width: 1220px
+      padding: 0 30px
+      margin: 0 auto
+      width: 100%
+      height: auto
+      position: relative
+
+  &__bottom
+    background: #000
+
+  &__bottom-inner
+    padding-top: 70px
+    padding-bottom: 70px
+
+  &__bottom-links
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+
+  &__bottom-list
+    margin-bottom: 40px
+
+  &__bottom-item
+    margin-bottom: 10px
+    &:last-of-type
+      margin-bottom: 0
+
+  &__bottom-title
+    margin-bottom: 15px
+    font-size: 14px
+    text-transform: uppercase
+    color: $color-white
+
+  &__bottom-link
+    text-decoration: none
+    font-size: 14px
+    color: #999
+    font-weight: 400
+    line-height: 1.4
+    &:hover, &:active
+      color: $color-white
+    &-telega
+      @include flex-center-center
+      width: 32px
+      height: 32px
+      border-radius: 100%
+      background: rgba(255, 255, 255, .15)
+      &:hover
+        background: rgba(255, 255, 255, .4)
+
+  &__bottom-button
+    display: inline-flex
+    align-items: center
+    padding: 10px
+    margin-bottom: 15px
+    border-radius: 10px
+    background: rgba(255, 255, 255, .15)
+    text-decoration: none
+    width: 210px
+    &:hover
+      background: rgba(255, 255, 255, .4)
+    &-img
+      @include flex-center-center
+      width: 32px
+      height: 32px
+      border-radius: 100%
+      background: rgba(255, 255, 255, .15)
+      margin-right: 10px
+
+    &-text
+      color: #999
+      font-weight: 400
+      font-size: 12px
+      line-height: 1.4
+      text-decoration: none
+      &.active
+        color: $color-white
+
+  &__bottom-pay
+
+  &__bottom-swiper
+    width: 100%
+    overflow: hidden
+
+  &__bottom-providers
+
+  &__bottom-pics
+    @include flex-center
+    gap: 20px
+    margin-bottom: 30px
+
+  &__bottom-pics-link
+    text-decoration: none
+
+  &__bottom-info
+    font-size: 10px
+    color: #999
+    line-height: 1.5
+    margin-bottom: 10px
+  &__bottom-nav
+    @include flex-center
+    justify-content: flex-start
+    background: #f5f5f5
+    width: 100%
+    height: 60px
+  &__bottom-home
+    @include style-link
+    &-text
+      color: #999
+      font-size: 12px
+
+.swiper4
+  @include flex-center-center
+  height: 80px
+  position: relative
+  margin-bottom: 40px
+  border-radius: 15px
+  overflow: hidden
+
+  .swiper-wrapper
+    height: 100%
+    max-width: 1030px
+
+  .swiper-slide
+    width: fit-content !important
+    .slider-4
+      @include flex-center-center
+      width: 145px
+      cursor: pointer
+      background-color: darken(#ffffff44, 30%)
+      height: 100%
+      position: relative
+
+      &:hover
+        background-color: #ffffff44
+
+  .swiper-button-lock
+    display: flex !important
+  .swiper-button-prev4
+    @include flex-center-center
+    width: 58px
+    height: 80px
+
+    cursor: pointer
+
+    position: absolute
+    left: 0
+    top: 0
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+    z-index: 10
+
+    background-color: darken(#ffffff44, 30%)
+    &:hover
+      background-color: #ffffff44
+  .swiper-button-next4
+    @include flex-center-center
+    width: 58px
+    height: 80px
+
+    cursor: pointer
+    z-index: 10
+    position: absolute
+    right: 0px
+    top: 0
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+    background-color: darken(#ffffff44, 30%)
+    overflow: hidden
+
+    &:hover
+      background: #ffffff44
+
+.swiper5
+  @include flex-center-center
+  height: 80px
+  position: relative
+  margin-bottom: 40px
+  border-radius: 15px
+  overflow: hidden
+
+  .swiper-wrapper
+    height: 100%
+    max-width: 1030px
+
+  .swiper-slide
+    width: fit-content !important
+    .slider-5
+      @include flex-center-center
+      width: 145px
+      cursor: pointer
+      background-color: darken(#ffffff44, 30%)
+      height: 100%
+      position: relative
+
+      &:hover
+        background-color: #ffffff44
+
+  .swiper-button-lock
+    display: flex !important
+  .swiper-button-prev5
+    @include flex-center-center
+    width: 58px
+    height: 80px
+
+    cursor: pointer
+
+    position: absolute
+    left: 0
+    top: 0
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+    z-index: 10
+
+    background-color: darken(#ffffff44, 30%)
+    &:hover
+      background-color: #ffffff44
+  .swiper-button-next5
+    @include flex-center-center
+    width: 58px
+    height: 80px
+
+    cursor: pointer
+    z-index: 10
+    position: absolute
+    right: 0px
+    top: 0
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+    background-color: darken(#ffffff44, 30%)
+    overflow: hidden
+
+    &:hover
+      background-color: #ffffff44

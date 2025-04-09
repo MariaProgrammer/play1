@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokerdom</title>
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="cover">
+
+    </div>
+    <div class="burger">
+      <button class="burger__cross btn-reset">
+        <img src="icons/burger/cross.svg" alt="">
+      </button>
+      <div class="burger__menu">
+        <ul class="burger__menu-list">        
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-1.svg" alt="">
+            <a href="#" class="burger__menu-link active">Казино</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-2.svg" alt="">
+            <a href="#" class="burger__menu-link">Покер</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-3.svg" alt="">
+            <a href="#" class="burger__menu-link">Спорт</a>
+          </li>
+        </ul>
+        <div class="burger__menu-linie"></div>
+        <ul class="burger__menu-list">        
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-4.svg" alt="">
+            <a href="#" class="burger__menu-link ">Акции</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-2.svg" alt="">
+            <a href="#" class="burger__menu-link">Награды</a>
+          </li>
+          <li class="burger__menu-item burger__menu-item-new ">
+            <img class="burger__menu-img" src="icons/burger/icon-5.svg" alt="">
+            <a href="#" class="burger__menu-link">Pokerdom token</a>
+            <span>New</span>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-6.svg" alt="">
+            <a href="#" class="burger__menu-link">Турниры</a>
+          </li>
+        </ul>
+        <div class="burger__menu-linie"></div>
+        <ul class="burger__menu-list">        
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-8.svg" alt="">
+            <a href="#" class="burger__menu-link ">Эксклюзив</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-9.svg" alt="">
+            <a href="#" class="burger__menu-link">Эксклюзив Live</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-10.svg" alt="">
+            <a href="#" class="burger__menu-link">Live Дилеры</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-11.svg" alt="">
+            <a href="#" class="burger__menu-link">Слоты</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-12.svg" alt="">
+            <a href="#" class="burger__menu-link">Быстрые игры</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-13.svg" alt="">
+            <a href="#" class="burger__menu-link">Столы</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-14.svg" alt="">
+            <a href="#" class="burger__menu-link">Spin gifts</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-15.svg" alt="">
+            <a href="#" class="burger__menu-link">Drops&wings</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-16.svg" alt="">
+            <a href="#" class="burger__menu-link">Spinoleague</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-17.svg" alt="">
+            <a href="#" class="burger__menu-link">Покупка бонуса</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-18.svg" alt="">
+            <a href="#" class="burger__menu-link">Джекпот</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-19.svg" alt="">
+            <a href="#" class="burger__menu-link">Megaways</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-20.svg" alt="">
+            <a href="#" class="burger__menu-link">Hold&win</a>
+          </li>
+        </ul>
+        <div class="burger__menu-linie"></div>
+        <ul class="burger__menu-list">        
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-21.svg" alt="">
+            <a href="#" class="burger__menu-link active">Новости</a>
+          </li>
+          <li class="burger__menu-item">
+            <img src="icons/burger/icon-22.svg" alt="">
+            <a href="#" class="burger__menu-link">FAQ</a>
+          </li>
+          
+        </ul>
+        <form action="#">
+          <select id="languages">
+              <option value="rus">Русский</option>
+              <option value="english">English</option>
+              <option value="usbekistan">O’zbekcha</option>
+              <option value="kaz">Қазақша</option>
+            </select>
+        </form>
+      </div>
+    </div>
+    
+    <header class="header">
+      <nav class="nav container-lg">
+        <img
+          src="icons/logo.svg"
+          alt="логотип покердом"
+          class="nav__logo-img"
+        />
+        <div class="nav__right">
+          <img src="icons/avatar_s.svg" alt="аватар" class="nav__avatar" />
+          <button class="btn-reset nav__btn-enter">Вход</button>
+          <button class="nav__btn-reg button btn-reset">Регистрация</button>
+          <button class="nav__btn-burger btn-reset">
+            <img
+              src="icons/burger.svg"
+              alt="кнопка бургер меню"
+              class="nav__burger"
+            />
+          </button>
+        </div>
+      </nav>
+      <nav class="nav__bottom">
+        <ul class="nav__bottom-list list-reset container">
+          <li class="nav__bottom-item active">
+            <a href="index.html">
+              <img src="icons/nav__bottom-icon1.svg" alt="изображение вишни" />
+              <span class="nav__bottom-link link3">Казино</span>
+            </a>
+          </li>
+          <li class="nav__bottom-item">
+            <a href="poker.html">
+              <img
+                src="icons/nav__bottom-icon2.svg"
+                alt="изображение пиковой масти"
+              />
+              <span class="nav__bottom-link link3">Покер</span>
+            </a>
+          </li>
+          <li class="nav__bottom-item">
+            <a href="#">
+              <img
+                src="icons/nav__bottom-icon3.svg"
+                alt="изображение футбольного мяча"
+              />
+              <span class="nav__bottom-link link3">Спорт</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+
+        <div class="container">
+          <div class="hero__banner">
+            <a href="#" class="hero__banner-link">
+              <span class="hero__banner-button">Халява</span>
+              <span class="hero__banner-text"
+                >Выполняй задания и получай Призы</span
+              >
+            </a>
+            <div class="hero__banner-img">
+              <img
+                src="icons/banner__icon.svg"
+                alt="изображение мешка с деньгами"
+                class="banner__icon"
+              />
+            </div>
+          </div>
+          <div class="swiper1">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide">
+                <img src="img/slide1-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Забери свой стартовый бонус <br />и умножь шансы на выигрыш!
+                  </p>
+                  <a class="slide__link">Вперед</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide2-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Приветственный <br />
+                    Покерный Бонус
+                  </p>
+                  <div class="slide__link-cover">
+                    <a class="slide__link">Вперед</a>
+                    <a class="slide__link slide__link--dark">Открыть</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide3-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Вы ждали? И мы ждали! <br />Встречай долгожданного <br />
+                    провайдера!
+                  </p>
+                  <a class="slide__link">Давай к нам</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide4-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Весенняя Турбо Серия <br />на 25 000 000 рублей!
+                  </p>
+                  <a class="slide__link slide__link--dark">Попробуй</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide5-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Кешбэк до 15% ждет тебя <br />каждую среду!
+                  </p>
+                  <a class="slide__link">Забрать</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide6-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Забери 20 FS за подписку <br />на Телеграм-канал и получай
+                    <br />
+                    подарки каждый день!
+                  </p>
+                  <a class="slide__link">Подпишись</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide7-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">
+                    Навстречу приключениям <br />в состязании <br />
+                    от Spinomenal!
+                  </p>
+                  <a class="slide__link">Попробуй</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide8-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">Ломай систему с Pragmatic Play</p>
+                  <a class="slide__link">Попробуй</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/slide9-pic.jpg" alt="" class="slide-img" />
+                <div class="slide-cover">
+                  <p class="slide__text">Криптомания в разгаре!</p>
+                  <a class="slide__link">Попробуй</a>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+        </div>
+      </section>
+      <section class="exclusive">
+        <div class="container">
+          <div class="exclusive__search">
+            <div class="exclusive__button-cover">
+              <button class="exclusive__button btn-reset font__button">
+                Поиск
+              </button>
+            </div>
+            <div class="exclusive__filter">
+              <div class="swiper2">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Эксклюзив</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Топ</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Эксклюзив&nbsp;Live</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Новые</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Hacksaw</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Live&nbsp;диллеры</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Быстрые&nbsp;игры</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">столы</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <a class="swiper2__link" href="#">
+                        <img src="" alt="" />
+                        <span class="font__button">Эксклюзив</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev2">
+                  <div class="swiper-button-prev2__img">
+                    <img src="icons/slider1__prev.svg" alt="стрелка назад" />
+                  </div>
+                </div>
+                <div class="swiper-button-next2">
+                  <div class="swiper-button-next2__img">
+                    <img src="icons/slider1__next.svg" alt="стрелка вперед" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="exclusive__cards">
+            <div class="swiper3">
+              <div class="exclusive__cover">
+                <div class="exclusive__title">
+                  <img
+                    src="icons/exclusive__icon.svg"
+                    alt=""
+                    class="exclusive__title-icon"
+                  />
+                  <h2 class="exclusive__title-h2">Эксклюзив</h2>
+                </div>
+                <div class="swiper3__buttons-cover">
+                  <a href="" class="swiper3__buttons-button-all"></a>
+                  <div class="swiper3__buttons">
+                    <div class="swiper-button-prev3 swiper__button">
+                      <img src="icons/slider1__prev.svg" alt="" />
+                    </div>
+                    <div class="swiper-button-next3 swiper__button">
+                      <img src="icons/slider1__next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-1.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-1.svg" alt="" />
+                          <span>Pragmatic Play</span>
+                        </div>
+                        <h4 class="card__bottom-title">Gates of Pokerdom</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-8.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-8.svg" alt="" />
+                          <span>Endorphina</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Slot</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-2.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-2.svg" alt="" />
+                          <span>Amusnet</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Candy</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-9.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-9.svg" alt="" />
+                          <span>Ruby Play</span>
+                        </div>
+                        <h4 class="card__bottom-title">
+                          Immortal Ways Pokerdom
+                        </h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-3.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-3.svg" alt="" />
+                          <span>Red Tiger</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Anniversary</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-10.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-5.svg" alt="" />
+                          <span>Spinomenal</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Tales</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-4.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-4.svg" alt="" />
+                          <span>PoggiPlay</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Club</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-11.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-6.svg" alt="" />
+                          <span>Playbro</span>
+                        </div>
+                        <h4 class="card__bottom-title">Secrets of Pokerdom</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-5.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-5.svg" alt="" />
+                          <span>Spinomenal</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Gifts</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-12.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-12.svg" alt="" />
+                          <span>Aviatrix</span>
+                        </div>
+                        <h4 class="card__bottom-title">Aviatrix</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-6.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-6.svg" alt="" />
+                          <span>Playbro</span>
+                        </div>
+                        <h4 class="card__bottom-title">Pokerdom Cats</h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-13.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-5.svg" alt="" />
+                          <span>Spinomenal</span>
+                        </div>
+                        <h4 class="card__bottom-title">
+                          Queen of Fire - Pokerdom
+                        </h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-7.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-5.svg" alt="" />
+                          <span>Spinomenal</span>
+                        </div>
+                        <h4 class="card__bottom-title">
+                          Pokerdom - Book Of Demi Gods IV
+                        </h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper3__slide">
+                    <a href="#" class="swiper3__slide-link">
+                      <div class="swiper3__slide-top">
+                        <img
+                          src="img/kasino/card-14.jpg"
+                          alt=""
+                          class="swiper3__slide-img"
+                        />
+                      </div>
+                      <div class="swiper3__slide-bottom card__bottom">
+                        <div class="card__bottom-name">
+                          <img src="icons/kasino/card-5.svg" alt="" />
+                          <span>Spinomenal</span>
+                        </div>
+                        <h4 class="card__bottom-title">
+                          Book of Xmas - Pokerdom
+                        </h4>
+                        <div class="card__bottom-link-wrap">
+                          <a href="" class="card__bottom-link">Играть</a>
+                          <a
+                            href=""
+                            class="card__bottom-link card__bottom-link--transparent"
+                            >Демо</a
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="container">
+          <div class="banner__inner">
+            <div class="banner__left banner-common">
+              <h5>Олимпийская битва <br />от Hacksaw</h5>
+              <a href="#" class="banner__link">Врывайся!</a>
+              <div class="banner__plashka banner__plashka-1">tournament</div>
+            </div>
+            <div class="banner__right banner-common">
+              <h5>
+                3 Aztec Temples <br />Самое время сыграть <br />
+                в новинку от 3 Oaks
+              </h5>
+              <a href="#" class="banner__link">СЕЙЧАС </a>
+              <div class="banner__plashka banner__plashka-2">pre-release</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container footer__top-container">
+          <h2>Pokerdom - онлайн-казино</h2>
+          <p class="footer__top-text">Казино Покердом — один из ведущих онлайн-операторов азартных игр, предоставляющий качественные услуги с соблюдением международных стандартов:</p>
+          <ul>
+            <li class="footer__top-text">Лицензия и легальность:<br>
+              Платформа работает по лицензии, выданной международным регулятором азартных игр Curacao eGaming, что подтверждает прозрачность и честность игрового процесса.
+            </li>
+            <li class="footer__top-text">Гарантия честной игры:<br>
+              Все слоты и игры на сайте сертифицированы и используют генератор случайных чисел (RNG), который исключает вмешательство в результаты. Провайдеры игр регулярно проходят проверки независимыми аудиторами, такими как iTech Labs и eCOGRA.
+            </li>
+          </ul>
+   
+        </div>
+        <div class="footer__top-button-cover">
+          <button class="footer__top-btn btn-reset">Развернуть</button>
+
+        </div>
+        
+      </div>
+      <div class="footer__bottom-nav">
+        <div class="container">
+          <a href="index.html" class="footer__bottom-home">
+            <img src="icons/footer/home.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <div class="footer__bottom-links">
+              <ul class="footer__bottom-list list-reset">
+                <li class="footer__bottom-item">
+                  <h6 href="#" class="footer__bottom-title">Покердом</h6>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Новости </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Акции </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> FAQ </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Слоты </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Live-диллеры </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Бонусы </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Провайдеры </a>
+                </li>
+              </ul>
+              <ul class="footer__bottom-list list-reset">
+                <li class="footer__bottom-item">
+                  <h6 href="#" class="footer__bottom-title">Безопасность</h6>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link">
+                    Условия предоствления услуг
+                  </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link">
+                    Защита информации
+                  </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link"> Антифрод </a>
+                </li>
+              </ul>
+              <ul class="footer__bottom-list list-reset">
+                <li class="footer__bottom-item">
+                  <h6 href="#" class="footer__bottom-title">Контакты</h6>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-button">
+                    <span class="footer__bottom-button-img">
+                      <img src="icons/footer/contact-icon1.svg" alt="" />
+                    </span>
+
+                    <span class="footer__bottom-button-text"
+                      >advertising@pokerdom.vip</span
+                    >
+                  </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-button">
+                    <span class="footer__bottom-button-img">
+                      <img src="icons/footer/contact-icon2.svg" alt="" />
+                    </span>
+
+                    <span class="footer__bottom-button-text"
+                      >support@pokerdom.vip</span
+                    >
+                  </a>
+                </li>
+                <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-button">
+                    <span class="footer__bottom-button-img">
+                      <img src="icons/footer/contact-icon3.svg" alt="" />
+                    </span>
+
+                    <span class="footer__bottom-button-text"
+                      >Партнерская программа</span
+                    >
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="footer__bottom-list">
+                <li class="footer__bottom-item">
+                  <h6 href="#" class="footer__bottom-title">
+                    Подпишитесь на нас
+                  </h6>
+                </li>
+                <li class="footer__bottom-item">
+                  <a
+                    href="https://t.me/joinchat/MKkl91IK3D04MTc6"
+                    class="footer__bottom-link-telega"
+                  >
+                    <img src="icons/footer/telega.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom-pay">
+              <h6 class="footer__bottom-title">Платежные методы</h6>
+              <div class="footer__bottom-swiper">
+                <div class="swiper4">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-1.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-2.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-3.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-4.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-5.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-6.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-4">
+                        <img src="icons/footer/swiper4/icon-7.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev4">
+                    <img src="icons/slider1__prev.svg" alt="">
+                  </div>
+                  <div class="swiper-button-next4">
+                    <img src="icons/slider1__next.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom-providers">
+              <h6 class="footer__bottom-title">Провайдеры</h6>
+              <div class="footer__bottom-swiper">
+                <div class="swiper5">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-1.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-2.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-3.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-4.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-5.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-6.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-7.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-8.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-9.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-10.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-11.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-12.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-13.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-14.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-15.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-16.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-17.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-18.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-19.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-20.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="slider-5">
+                        <img src="icons/footer/swiper5/icon-21.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev5">
+                    <img src="icons/slider1__prev.svg" alt="">
+                  </div>
+                  <div class="swiper-button-next5">
+                    <img src="icons/slider1__next.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom-pics">
+              <a href="#" class="footer__bottom-pics-link">
+                <img src="icons/footer__icon1.svg" alt="" />
+              </a>
+              <a href="#" class="footer__bottom-pics-link">
+                <img src="icons/footer__icon2.svg" alt="" />
+              </a>
+            </div>
+            <p class="footer__bottom-info">
+              Покердом придерживается принципов ответственной игры, для
+              детальной информации посетите
+              <a href="https://www.gamblingtherapy.org/ru/" target="_self"
+                >Gamblingtherapy.org</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/swiper__home.js"></script>
+  </body>
+</html>
