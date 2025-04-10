@@ -437,6 +437,20 @@ body {
   margin: 0 auto;
 }
 
+.container-mid {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 866px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .btn-reset {
   padding: 0;
   border: none;
