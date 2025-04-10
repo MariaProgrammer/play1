@@ -478,7 +478,7 @@ body {
 }
 
 .stop-scroll {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .disable-scroll {
@@ -548,7 +548,17 @@ body {
 }
 
 .burger {
-  position: relative;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 304px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 35px 40px 35px 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   transform: translateX(100%);
   transition: transform 1s ease-out;
   z-index: 300;
@@ -563,20 +573,6 @@ body {
   top: 15px;
   right: 30px;
   z-index: 205;
-}
-
-.burger__menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 304px;
-  height: auto;
-  padding: 35px 40px 35px 30px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 200;
 }
 
 .burger__menu-linie {

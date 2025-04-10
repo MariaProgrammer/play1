@@ -15,6 +15,7 @@ for (let anchor of anchors) {
 }
 
 // Burger
+
 const burgerButton = document.querySelector(".nav__btn-burger");
 const burgerMenu = document.querySelector(".burger");
 const crossButton = document.querySelector(".burger__cross");
@@ -23,6 +24,7 @@ const cover = document.querySelector(".cover");
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.add("active");
   cover.classList.add("active");
+  
   
 document.body.classList.add("stop-scroll");
 });
