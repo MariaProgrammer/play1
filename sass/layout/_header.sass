@@ -15,27 +15,26 @@
       display: inline-block
       width: 168px
       height: 30px
+      &--mob
+        display: none
     &__right
       @include flex-center-between
       width: 405px
 
-    &__avatar svg
+    &__avatar
       width: 40px
       height: 40px
+      &--mob
+        width: 40px
+        height: 40px
+        display: none
+    &__buttons-cover
+      @include flex-center
+      gap: 15px
+      order: 0
     &__btn-enter
-      @include flex-center-center
-      width: 108px
-      height: 40px
-      border: 1px solid $color-grey
-      border-radius: 25px
-      background: #000
-      font-size: 14px
-      text-transform: uppercase
-      color: $color-grey
-    &__btn-reg
-      @include flex-center-center
-      width: 152px
-      height: 40px
+      
+    
     &__btn-burger
     &__burger
       width: 48px
@@ -82,3 +81,35 @@
     &-link
       @include style-link
       color: $color-black
+@media (max-width: 767px)  
+  .header .nav
+    &__logo-img
+      display: none
+      &--mob
+        display: block 
+  .header 
+    .nav__btn-burger
+      display: none
+    .nav__right
+      justify-content: flex-end
+      width: auto        
+    .nav__avatar
+      display: none
+      &--mob
+        display: block
+    .nav__bottom-link
+      font-size: 12px
+    .nav__bottom-item img 
+      width: 16px
+      height: 16px
+      top: 3px
+    .nav__bottom-item a 
+      padding-top: 6px
+    .nav__logo-img--mob
+      order: 0
+    .nav__avatar--mob
+      order: 1
+    .nav__buttons-cover
+      order: 2
+      gap: 4px
+  

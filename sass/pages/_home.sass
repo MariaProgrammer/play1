@@ -39,6 +39,7 @@
         position: absolute
         top: -23px
         right: 27%
+        z-index: 15
 
 .swiper1
   position: relative
@@ -76,9 +77,6 @@
   margin-right: 10px !important
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active
   background: rgb(255, 255, 255) !important
-
-
-
 
 .slide
   position: relative
@@ -138,7 +136,7 @@
   &__link
     @include flex-center-center
     text-decoration: none
-    
+
     img
       // margin-right: 10px
       // width: 25px
@@ -211,12 +209,12 @@
 .exclusive
   &__cover
     @include flex-center-between
+    margin-bottom: 25px
   &__cards
     padding-bottom: 30px
 
   &__title
     @include flex-center
-    margin-bottom: 25px
 
   &__title-icon
     margin-right: 15px
@@ -310,8 +308,11 @@
   .swiper3__buttons
     @include flex-center
     gap: 10px
+    margin-right: 20px
     &-cover
       @include flex-center
+    &-button-all
+      padding: 10px 20px
 
 .banner
   background: #e8e8e8
@@ -356,7 +357,7 @@
       z-index: 10
 
   &__right
-    width: 100%   
+    width: 100%
     border-radius: 15px
     background: url('../img/banner-2.jpg') center / cover no-repeat
     position: relative
@@ -375,16 +376,75 @@
   display: flex
   flex-direction: column
   justify-content: space-between
-  h5    
+  h5
     font-size: 20px
     font-weight: 600
     color: $color-white
     line-height: 1.4
     text-shadow: 0px 1px 4px rgba(0, 0, 0, .1)
 
+@media (max-width: 1300px)
+  .swiper3
+    &__slide
+      width: 100%
+      min-width: 100%
+@media (max-width: 991px)
+  .slide
+
+    &__text
+      font-size: 24px
+    &__link
+      font-size: 14px
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: 30% top
+
+  .swiper3 .swiper3__buttons
+    display: none
+
+  .swiper3
+    height: 550px
+    &__slide
+      width: 100%
+      min-width: 100%
+  .banner
+    &__inner
+      flex-direction: column
+@media (max-width: 767px)
+  .main 
+    .hero__banner-img
+      display: none
+    .hero__banner-link
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 100%
+      gap: 5px
+    .hero__banner-button
+      margin-right: 0
+    .slide__text
+      font-size: 14px
+      line-height: 20px
 
 
-    
-
-
-
+@media (max-width: 576px)
+  .swiper1
+    height: auto
+    .swiper-slide
+      height: 145px
+      .slide-cover
+        padding: 10px
+        height: 145px
+  .swiper3
+    height: 780px
+    &__slide
+      width: 100%
+      min-width: 100%
+      height: 100% !important
+      overflow: visible
+      &-top
+        height: 200px

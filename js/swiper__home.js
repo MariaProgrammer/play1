@@ -199,6 +199,96 @@ const swiper3 = new Swiper(".swiper3", {
 
   mousewhell: true,
   keyboard: true,
+  breakpoints: {
+  // when window width is >= 300px
+  // 	300: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 12
+
+  //   },
+  //   340: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 16,
+  //     slidesPerGroup: 1,
+  //     centeredSlides: false,
+  //     centerInsufficientSlides: true
+  //   },
+
+
+  // 	360: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 16,
+  //     slidesPerGroup: 1,
+  //     centeredSlides: true,
+  //     centerInsufficientSlides: true
+  //   },
+  //   400: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 32,
+  //     slidesPerGroup: 1,
+  //     centeredSlides: false,
+  // centerInsufficientSlides: false
+  //   },
+
+  // when window width is >= 480px
+  //   767: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 60,
+  //     centeredSlides: true,
+  // centerInsufficientSlides: true
+  //   },
+  // when window width is >= 640px
+  //   958: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 100
+  //   },
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 15, 
+    grid: {
+      rows: 2
+
+    },
+
+},
+  576: {
+    slidesPerView: 2,
+    spaceBetween: 15, 
+    grid: {
+      rows: 2
+
+    },
+
+},
+  767: {
+    slidesPerView: 3,
+    spaceBetween: 15, 
+    grid: {
+      rows: 2
+
+    },
+
+},
+  	991: {
+      slidesPerView: 4,
+      spaceBetween: 15, 
+      grid: {
+        rows: 2
+
+      },
+
+  },
+  	1300: {
+      slidesPerView: 5,
+      spaceBetween: 15, 
+      grid: {
+        rows: 2
+
+      },
+
+  },
+}
+ 
   
 });
 

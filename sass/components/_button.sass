@@ -4,6 +4,17 @@
   font-size: 14px
   text-transform: uppercase
   border-radius: 25px
+  padding: 12px 25px
+  &--dark
+    @include flex-center-center
+    padding: 12px 25px      
+    border: 1px solid $color-grey
+    border-radius: 25px
+    background: #000
+    font-size: 14px
+    text-transform: uppercase
+    color: $color-grey
+    
   
 .swiper__button
   @include flex-center-center
@@ -14,3 +25,14 @@
   img
     width: 16px
     height: 16px
+  
+@media (max-width: 767px) 
+  .header
+
+    .button
+      font-size: 12px
+      padding: 10px 16px
+      &--dark
+        font-size: 12px
+        padding: 10px 16px
+        

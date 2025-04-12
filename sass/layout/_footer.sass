@@ -85,6 +85,9 @@
     text-transform: uppercase
     color: $color-white
 
+  &__links--mobile
+    display: none
+
   &__bottom-link
     text-decoration: none
     font-size: 14px
@@ -177,6 +180,7 @@
 
   .swiper-slide
     width: fit-content !important
+
     .slider-4
       @include flex-center-center
       width: 145px
@@ -194,16 +198,13 @@
     @include flex-center-center
     width: 58px
     height: 80px
-
     cursor: pointer
-
     position: absolute
     left: 0
     top: 0
     border-top-left-radius: 15px
     border-bottom-left-radius: 15px
     z-index: 10
-
     background-color: darken(#ffffff44, 30%)
     &:hover
       background-color: #ffffff44
@@ -211,7 +212,6 @@
     @include flex-center-center
     width: 58px
     height: 80px
-
     cursor: pointer
     z-index: 10
     position: absolute
@@ -221,7 +221,6 @@
     border-bottom-right-radius: 15px
     background-color: darken(#ffffff44, 30%)
     overflow: hidden
-
     &:hover
       background: #ffffff44
 
@@ -239,6 +238,7 @@
 
   .swiper-slide
     width: fit-content !important
+
     .slider-5
       @include flex-center-center
       width: 145px
@@ -256,16 +256,13 @@
     @include flex-center-center
     width: 58px
     height: 80px
-
     cursor: pointer
-
     position: absolute
     left: 0
     top: 0
     border-top-left-radius: 15px
     border-bottom-left-radius: 15px
     z-index: 10
-
     background-color: darken(#ffffff44, 30%)
     &:hover
       background-color: #ffffff44
@@ -273,7 +270,6 @@
     @include flex-center-center
     width: 58px
     height: 80px
-
     cursor: pointer
     z-index: 10
     position: absolute
@@ -283,6 +279,120 @@
     border-bottom-right-radius: 15px
     background-color: darken(#ffffff44, 30%)
     overflow: hidden
-
     &:hover
       background-color: #ffffff44
+.footer
+  &__menu--mob
+    display: none
+
+@media (max-width: 767px)
+  .footer
+    padding-bottom: 60px
+  .swiper4
+    height: 100%
+    .swiper-slide
+      width: fit-content !important
+      height: fit-content !important
+    .swiper-button-lock
+      display: none !important
+    .swiper-slide .slider-4
+      width: 90px
+      height: 60px
+      img
+        display: block
+        width: 59px
+        height: 39px
+
+  .swiper5
+    height: 100%
+    .swiper-slide
+      width: fit-content !important
+      height: fit-content !important
+    .swiper-button-lock
+      display: none !important
+    .swiper-button-prev5
+      display: none
+    .swiper-button-next5
+      display: none
+    .swiper-slide .slider-5
+      width: 90px
+      height: 60px
+      img
+        display: block
+        width: 59px
+        height: 39px
+@media (max-width: 767px)
+  .footer
+    &__menu--mob
+      display: block
+      width: 100%
+      height: 60px
+      background: $color-black
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 100
+    &__menu--mob-list
+      @include flex-center-between
+      padding-top: 5px
+
+    &__menu--mob-item
+
+    &__menu--mob-btn
+
+    &__menu--mob-text
+      font-size: 10px
+      color: #999
+      line-height: 1.4
+    &__links--desctop
+      display: none
+    &__links--mobile
+      display: grid
+      grid-template-columns: repeat(1, 1fr)
+      grid-template-rows: auto
+    &__bottom-list
+      margin-bottom: 20px
+    &__bottom-item
+    &__bottom-button
+      @include flex-center
+      width: 100%
+
+
+    &__bottom-title
+      display: inline-block
+      font-size: 12px
+      margin-bottom: 10px
+  .accordion
+    &__control
+      @include flex-center-between
+      text-align: left
+      width: 100%
+      border-bottom: 1px solid #eee
+      margin-bottom: 10px
+    &__icon
+      img
+        width: 12px
+        height: 12px
+        transform: translateY(-3px) rotate(90deg)
+    &__content
+      max-height: 0
+      // opacity: 0
+      overflow: hidden
+      will-change: max-height
+      transition: all 0.3s ease-out
+    &__icon
+      transition: transform 0.3s ease-out
+  .accordion__icon-img.open
+    transform: rotate(270deg)
+  .accordion__content.open
+    max-height: 100%
+    opacity: 1
+    // padding: 20px
+    // text-decoration: none
+    // font-size: 14px
+    // color: #999
+    // font-weight: 400
+    // line-height: 1.4
+  .accordion[open] .accordion__icon-img
+  	transform: rotate(270deg)

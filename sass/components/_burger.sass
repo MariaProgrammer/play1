@@ -32,7 +32,11 @@ body
   transition: transform 1s ease-out
   z-index: 300
   
+ 
+    
   &.active
+    transform: translateX(0)
+
     transform: translateX(0)
 
   &__cross
@@ -116,3 +120,9 @@ select
   border: 1px solid $color-grey
   border-radius: 5px
   outline: none
+@media (max-width: 767px) 
+  .burger
+    left: 0
+    transform: translateX(-100%)
+
+
