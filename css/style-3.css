@@ -491,15 +491,6 @@ body {
   width: 100%;
 }
 
-.font__button {
-  color: #000;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
 .footer__top-text {
   color: #999999;
   font-weight: 400;
@@ -544,6 +535,15 @@ body {
   height: 16px;
 }
 
+.font__button {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .header .button {
     font-size: 12px;
@@ -552,6 +552,9 @@ body {
   .header .button--dark {
     font-size: 12px;
     padding: 10px 16px;
+  }
+  .font__button {
+    font-size: 12px;
   }
 }
 

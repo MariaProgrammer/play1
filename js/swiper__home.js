@@ -243,15 +243,6 @@ const swiper3 = new Swiper(".swiper3", {
   //     spaceBetween: 100
   //   },
   320: {
-    slidesPerView: 1,
-    spaceBetween: 15, 
-    grid: {
-      rows: 2
-
-    },
-
-},
-  576: {
     slidesPerView: 2,
     spaceBetween: 15, 
     grid: {
@@ -260,9 +251,18 @@ const swiper3 = new Swiper(".swiper3", {
     },
 
 },
-  767: {
+  576: {
     slidesPerView: 3,
-    spaceBetween: 15, 
+    spaceBetween: 5, 
+    grid: {
+      rows: 2
+
+    },
+
+},
+  767: {
+    slidesPerView: 4,
+    spaceBetween:15, 
     grid: {
       rows: 2
 
@@ -278,6 +278,15 @@ const swiper3 = new Swiper(".swiper3", {
       },
 
   },
+//   1200: {
+//     slidesPerView: 4,
+//     spaceBetween: 15, 
+//     grid: {
+//       rows: 2
+
+//     },
+
+// },
   	1300: {
       slidesPerView: 5,
       spaceBetween: 15, 
