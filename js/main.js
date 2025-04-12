@@ -57,7 +57,15 @@ document.body.classList.remove("stop-scroll");
 
 //swiper footer
 const swiper4 = new Swiper(".swiper4", {
-  slidesPerView: 7,
+  // slidesPerView: 7,
+  // IOSEdgeSwipeDetection: true,
+  //   onTouchStart: function()
+  //   {
+  //       return false;
+  //   },
+  //   scrollbarDraggable: true,
+  //   scrollbar: '.swiper-scrollbar',
+  //   scrollbarHide: true,
   
   spaceBetween: 3,  
   loop: false,

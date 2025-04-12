@@ -1172,7 +1172,7 @@ select {
 }
 
 .swiper4 .swiper-button-next4:hover {
-  background: #ffffff44;
+  background-color: #ffffff44;
 }
 
 .swiper5 {
@@ -1260,9 +1260,6 @@ select {
 }
 
 @media (max-width: 767px) {
-  .footer {
-    padding-bottom: 60px;
-  }
   .swiper4 {
     height: 100%;
   }
@@ -1272,6 +1269,12 @@ select {
   }
   .swiper4 .swiper-button-lock {
     display: none !important;
+  }
+  .swiper4 .swiper-button-prev4 {
+    display: none;
+  }
+  .swiper4 .swiper-button-next4 {
+    display: none;
   }
   .swiper4 .swiper-slide .slider-4 {
     width: 90px;
@@ -1307,9 +1310,9 @@ select {
     width: 59px;
     height: 39px;
   }
-}
-
-@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 60px;
+  }
   .footer__menu--mob {
     display: block;
     width: 100%;
