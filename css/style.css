@@ -1929,7 +1929,7 @@ select {
   .swiper3__slide {
     width: auto !important;
     min-width: auto !important;
-    height: 173px !important;
+    height: 180px !important;
   }
   .swiper3__slide-top {
     height: 108px;
@@ -1946,6 +1946,7 @@ select {
   }
   .swiper3 .card__bottom-title {
     font-size: 14px;
+    margin-bottom: 24px;
   }
   .swiper3 .card__bottom-link {
     padding: 8px 12px;
