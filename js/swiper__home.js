@@ -107,8 +107,8 @@ const swiper1 = new Swiper('.swiper1', {
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
-  slidesPerView: 5,
+  loop: false,
+  slidesPerView: 'auto',
   
   spaceBetween: 10,
   // freemode: true,
