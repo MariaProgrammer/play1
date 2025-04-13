@@ -1427,6 +1427,12 @@ body {
   margin-bottom: 30px;
 }
 
+.main__banner-top-1 {
+  background: url("../img/poker/football.jpg") center/cover no-repeat;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
 .main__banner-title {
   margin: 0;
   margin-bottom: 30px;
