@@ -2048,7 +2048,6 @@ select {
   .swiper3__slide {
     width: 100%;
     min-width: 100%;
-    height: 207px;
     overflow: hidden;
   }
   .swiper3__slide-bottom {
